@@ -16,9 +16,7 @@ This data engineering project automates the collection, processing, and storage 
 - [Data Collection](#data-collection)
 - [Data Processing](#data-processing)
 - [Web Application](#web-application)
-- [Orchestration with Apache Airflow](#orchestration-with-apache-airflow)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Architecture
 
