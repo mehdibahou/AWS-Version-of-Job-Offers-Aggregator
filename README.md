@@ -1,4 +1,4 @@
-# AWS Versio Of Job Offers Aggregator Project
+# AWS Version Of Job Offers Aggregator Project
 
 This data engineering project automates the collection, processing, and storage of job offers data from LinkedIn, Glassdoor, and Indeed. The project leverages multiple AWS services for data collection, processing, and visualization.
 
@@ -8,8 +8,7 @@ This data engineering project automates the collection, processing, and storage 
 - Data transformation and cleaning using Amazon EMR (Elastic MapReduce) with PySpark.
 - Storing processed data in Amazon Redshift.
 - Visualizing job offers on a web application with Next.js.
-- Orchestrating tasks with Apache Airflow.
-- Scheduled data processing using AWS Lambda and CloudWatch Events.
+- Scheduled data processing using AWS Lambda and CloudWatch Events and S3 Event Trigger.
 
 ## Table of Contents
 
@@ -33,8 +32,6 @@ This project follows a serverless architecture that makes use of several AWS ser
 
 - **Web Application**: A web application built with Next.js retrieves job offers data from Amazon Redshift and displays it on a Google Map.
 
-- **Orchestration**: Apache Airflow orchestrates the entire data pipeline, ensuring that tasks are executed in the correct sequence.
-
 ## Data Collection
 
 Data is collected through web scraping from LinkedIn, Glassdoor, and Indeed. Custom AWS Lambda functions initiate data collection tasks when data becomes available on these platforms.
@@ -46,10 +43,6 @@ Amazon EMR clusters with PySpark are used to process the collected data. PySpark
 ## Web Application
 
 A web application built with Next.js provides a user-friendly interface for visualizing job offers. The application displays job offers on a Google Map, along with details and links to the job postings.
-
-## Orchestration with Apache Airflow
-
-Apache Airflow orchestrates the entire data pipeline. It defines and schedules workflows to ensure that data collection, processing, and web application tasks are executed in a coordinated manner.
 
 ## Contributing
 
